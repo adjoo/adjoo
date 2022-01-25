@@ -1,0 +1,16 @@
+//правила анимации
+@use "../base/variables" as *
+
+//.s1_bgAnimation
+  animation-duration: 300s
+  animation-name: background_clouds_animation
+  animation-iteration-count: infinite
+  animation-direction: normal
+  animation-timing-function: cubic-bezier(0.5, 0, 0.8, 1)
+//@keyframes background_clouds_animation
+  100%
+    background-position: 288em 0%, 50% 100%
+  0%
+    background-position: 96em 0%, 50% 100%
+  50%
+    background-position: 192em 0%, 50% 100%

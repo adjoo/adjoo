@@ -1,0 +1,22 @@
+//оформление ссылок, переходов
+@use "../base/variables" as *
+
+.link_on_element //use position:relative to parent
+  display: block
+  position: absolute
+  cursor: pointer
+  z-index: 8
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+
+.a
+  &:hover, &:active, &:focus
+    color: $accent
+
+.a_accent
+  color: $accent
+  &:hover, &:active, &:focus
+    color: inherit
+

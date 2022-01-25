@@ -1,0 +1,64 @@
+@use "../base/variables" as *
+
+$c_gap: 1.5rem
+
+.carousel__wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  @media (max-width: 991px)
+    padding: 0 $c_gap*4
+.carousel__button
+  width: $c_gap*2
+  height: $c_gap*2
+  background: url(../img/svg/down-chevron.svg) center center no-repeat
+  background-size: contain
+  cursor: pointer
+  &.prev
+    order: -1
+    transform: rotate(90deg)
+    margin-left: -$c_gap*2
+  &.next
+    order: 1
+    transform: rotate(270deg)
+    margin-right: -$c_gap*2
+  &:hover
+    background: url(../img/svg/down-chevron-active.svg) center center no-repeat
+.carousel_list_wrapper
+  width: 100%
+  overflow: hidden
+.carousel__list
+  width: 1000%
+  height: 100%
+  display: flex
+  align-items: center
+  position: relative
+  & > *
+    padding: $c_gap
+    display: flex
+    height: 100%
+    width: 10%
+    align-items: center
+    justify-content: center
+.carousel__list_2
+  & > *
+    width: 5%
+    max-width: 5%
+    @media (max-width: 991px)
+      width: 10%
+      max-width: 10%
+.carousel__list_3
+  & > *
+    width: 3.33333%
+    max-width: 3.33333%
+    @media (max-width: 991px)
+      width: 10%
+      max-width: 10%
+.carousel__list_4
+  & > *
+    width: 2.5%
+    max-width: 2.5%
+    @media (max-width: 991px)
+      width: 10%
+      max-width: 10%
+

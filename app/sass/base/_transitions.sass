@@ -1,0 +1,32 @@
+.transition
+  transition: all .2s ease .0s
+  &:before, &:after, &>*
+    transition: all .2s ease .0s
+  &:hover, &.active
+    transition: all .1s ease 0s
+    &:before, &:after, &>*
+      transition: all .1s ease 0s
+
+.transition_slow
+  transition: all .3s ease .15s
+  &:before, &:after, &>*, &>*>*
+    transition: all .3s ease .15s
+  &:hover, &.active
+    transition: all .1s ease .1s
+    &:before, &:after, &>*, &>*>*
+      transition: all .1s ease .1s
+
+.transition_fast
+  transition: all .05s ease .0s
+  &:before, &:after, &>*
+    transition: all .05s ease .0s
+  &:hover, &.active
+    transition: all .05s ease .0s
+    &:before, &:after, &>*
+      transition: all .05s ease .0s
+
+
+.transition_fullPageScroll
+  transition: all .2s ease .1s
+  &.active
+    transition: all .2s ease .1s

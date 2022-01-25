@@ -1,0 +1,15 @@
+//основной контейнед для контента страницы(вместо бутстрап)
+.container
+  position: relative
+  z-index: 1
+  max-width: 100%
+  @media (min-width: 576px) //--breakpoint-sm
+    max-width: 55rem
+  @media (min-width: 768px) //--breakpoint-md
+    max-width: 74rem
+  @media (min-width: 992px) //--breakpoint-lg
+    max-width: 95rem
+  @media (min-width: 1200px) //--breakpoint-xl
+    max-width: 116rem
+  @media (min-width: 1330px) //--breakpoint-xxl
+      max-width: 129rem

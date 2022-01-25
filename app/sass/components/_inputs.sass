@@ -1,0 +1,61 @@
+//оформление инпутов, чекбоксов, текстовых полей и других полей ввода для форм
+@use "../base/variables" as *
+@use "../base/typography" as *
+
+form
+  .description
+    max-width: 48ch
+.form_stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: stretch
+
+input[type='text']
+  font-size: 1.4em
+  line-height: 1
+  width: 100%
+  padding: .2em 0
+
+//<label><span/><input[type=text]><label>
+//label
+.input_style_1
+  position: relative
+  display: inline-flex
+  min-height: 4.7em
+  width: 100%
+  max-width: 41em
+  border-radius: 1.5em
+  align-items: center
+  background: $bg
+  border: 2px solid $stroke
+  padding: 0 1.5em
+  margin-top: 1em
+  margin-bottom: 4em
+  span
+    @extend .h3
+    position: absolute
+    left: .5em
+    bottom: 100%
+    line-height: 1
+    display: inline-block
+    background: $bg
+    padding: 0 .3em .3em
+    margin-bottom: -.75em
+    color: $text
+
+  input[type='text']
+    color: $text
+    font-weight: $fs_med
+    &::placeholder
+      font-weight: $fs_regular
+      color: $l_dark
+  &:hover
+    border: 2px solid $accent
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+//стили Выпадающих окон общие и в частности
+@use "../base/variables" as *
+.mfp_popup_window //стилизация появления и исчезновения
+  .mfp-container
+    opacity: 0
+    transition: all .2s ease
+    transform: scaleY(0.9)
+    transform-origin: center
+  &.mfp-bg
+    background-color: $dark
+    opacity: 0
+    transition: opacity .3s ease 0s
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+      transform: scaleY(1)
+      transform-origin: center
+      transition: all .2s ease 0s
+    &.mfp-bg
+      opacity: 0.8
+      transition: opacity .3s ease 0s
+  &.mfp-removing
+    .mfp-container
+      transform: scaleY(0.6)
+      opacity: 0
+    &.mfp-bg
+      opacity: 0
+
+.popup_window
+  position: relative
+  margin: auto
+  width: 38em
+  max-width: 38em
+  min-height: 20em
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: $bg
+  padding: 4em
+  box-shadow: 0em 0em 2em -.5em $l_dark
+  background: url(../img/popup_bg.png) center center no-repeat
+  background-size: cover
+  .mfp-close
+    display: block
+    position: absolute
+    top: 0.66em
+    right: 0.66em
+    color: $text
+    min-width: unset
+    min-height: unset
+    width: .5em
+    height: .5em
+    font-size: 6em
+    line-height: .5em
+    font-weight: $fs_regular
+    font-family: inherit
+  form
+    .description
+      text-align: center
+  @media (max-width: 500px)
+    font-size: .8rem
+
+.popup_window__title
+  margin-right: auto
+  padding-right: 7em
+.popup_gallery
+  width: auto
+  max-width: calc(100% - 6rem)
+  padding: 4em 2em 1em
+  @media (min-width: 992px)
+    max-width: 76em
+  .mfp-close
+    top: .1em
+    right: .1em
+
+.popup_gallery__sliderWr
+  width: 100%
+  &:before
+    display: block
+    content: ''
+    padding-top: 62%!important
+
+  .popup_gallery__sliderItems
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+.popup_gallery_sliderButtons
+  display: flex
+  .sliderBtn
+    margin: 1em
+
+.popup_video_wrapper
+  max-width: calc(100% - 6em)
+  width: 128em
+  .mfp-close
+    top: .1em
+    right: .1em
+  video
+    max-width: 100%

@@ -1,0 +1,121 @@
+//оформление элементов, которые выглядят как кнопки, втч ссылок как кнопки
+
+@use "../base/variables" as *
+
+button, .button
+  display: inline-flex
+  line-height: 1
+  font-weight: $fs_regular
+  align-items: center
+  justify-content: center
+  text-align: center
+  white-space: nowrap
+
+.button-svg //с элементом внутри, акцентный фон, белый текст
+  $fontSize: 1rem
+  $minH: 5em // 50px
+  $radius: 1.5em //15px
+  $col_1: $white
+  $col_2: $accent
+  $col_3: transparent
+  width: $minH
+  height: $minH
+  border-radius: $radius
+  background-color: $col_2
+  border: 1px solid $col_1, 3px solid $col_3
+  color: $col_1
+  &:hover, &:active, &:focus
+    background-color: $col_2
+    border: 1px solid $col_1, 3px solid $col_2
+    color: $col_1
+    border-radius: $radius*2
+  svg
+    width: 2.5em
+    height: 2.5em
+
+.button_style_1 //акцентный фон, белый текст
+  $fontSize: 1.8rem
+  $paddingX: 2.9em
+  $minH: 2.9em // 53px
+  $radius: 0.83333em //15px
+  $col_1: $white
+  $col_2: $accent
+  $col_3: $gradient
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background: $col_2
+  border-radius: $radius
+  color: $col_1
+  border: 1px solid $col_2
+  &:hover, &:active, &:focus
+    border-radius: $radius
+    color: $col_1
+    background: $accent_dark
+    border: 1px solid $col_2
+    box-shadow: 0 .2em 1.5em -.8em $col_2
+
+.button_style_2 //белый фон, акцентная рамка
+  $fontSize: 1.2rem
+  $paddingX: 1.666em // 20px
+  $minH: 3.16667em
+  $radius: 1.25em //15px
+  $col_1: $bg
+  $col_2: $accent
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background-color: $col_1
+  border-radius: $radius
+  border: 1px solid $col_2
+  &:hover, &:active, &:focus
+    border-radius: $radius
+    color: $col_1
+    background-color: $col_2
+    border: 1px solid $col_2
+
+.button_style_3 //белый текст, белая рамка, без фона, с тенью
+  $fontSize: 1.6rem
+  $paddingX: 2.8125em // 45px
+  $minH: 2.8125em // 45px
+  $radius: 0.9375em //15px
+  $col_1: transparent
+  $col_2: $accent
+  $col_3: $white
+  font-size: $fontSize
+  padding: 0 $paddingX
+  min-height: $minH
+  background-color: $col_1
+  border-radius: $radius
+  color: $col_3
+  border: 1px solid $col_3
+  &:hover, &:active, &:focus
+    border-radius: $radius
+    //color: $col_1
+    background-color: $col_2
+    border: 1px solid $col_3
+    box-shadow: 0 .2em 1.5em -.8em $col_3
+
+.fullPageScroll__scrollButton, .fullPageScroll__scrollButton:focus
+  $fontSize: 1rem
+  $W: 3em // 30px -- 60px
+  $H: .4em //4px -- 4px
+  $col_1: $white
+  $col_2: $accent
+  $col_3: transparent
+  padding: $H $W*0.1
+  margin-left: auto
+  &:before
+    display: block
+    content: ''
+    width: $W
+    height: $H
+    background-color: $col_1
+  &:hover, &:active, &.active
+    &:before
+      width: $W + $W/2
+      height: $H
+      background-color: $col_2
+
+
+

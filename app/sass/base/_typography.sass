@@ -1,0 +1,91 @@
+@use "variables" as *
+
+//span 14 - auto - regular
+span
+  font-size: 1.4rem
+  line-height: 1
+  font-weight: $fs_regular
+//a inherit - inherit - inherit
+a
+  font-size: inherit
+  line-height: inherit
+  font-weight: inherit
+
+//strong inherit - inherit - bold
+strong
+  font-size: inherit
+  line-height: inherit
+  font-weight: $fs_bold
+
+//p 14 - 150% - regular
+p
+  max-width: 75ch
+  font-size: 1.4rem
+  line-height: 1.5
+  font-weight: $fs_regular
+  text-align: justify
+
+//H1 63px - 100% - bold
+.h1
+  font-size: 6.3rem
+  line-height: 1
+  font-weight: $fs_bold
+  @media (max-width: 1199px)
+    font-size: 5.5rem
+  @media (max-width: 767px)
+    font-size: 3.4rem
+
+//H2 36px - auto - medium
+.h2
+  font-size: 3.6rem
+  line-height: normal
+  font-weight: $fs_med
+  @media (max-width: 767px)
+    font-size: 3rem
+  @media (max-width: 1199px)
+    font-size: 3.2rem
+  
+//H3 18 - 130% - light
+.h3
+  font-size: 1.8rem
+  line-height: 1.3
+  font-weight: $fs_light
+
+//H4 16 - 130% - light
+.h4
+  font-size: 1.6rem
+  line-height: 1.3
+  font-weight: $fs_light
+
+//H5 16 -130% - medium
+.h5
+  font-size: 1.6rem
+  line-height: 1.3
+  font-weight: $fs_med
+
+//description 12 -100% - regular
+.description
+  font-size: 1.2rem
+  line-height: 1
+  font-weight: $fs_med
+
+//Цвет текста
+.tc_accent
+  color: $accent
+.tc_accent-white
+  color: $white
+.tc_accent-orange
+  color: $orange
+.tc_accent-gray
+  color: $l_dark
+
+
+.uppercase
+  text-transform: uppercase
+
+.bold
+  font-weight: $fs_bold
+.semi
+  font-weight: $fs_semi
+.regular
+  font-weight: $fs_regular
