@@ -30,20 +30,22 @@ p
   font-size: 6.3rem
   line-height: 1
   font-weight: $fs_bold
-  @media (max-width: 1199px)
-    font-size: 5.5rem
-  @media (max-width: 767px)
-    font-size: 3.4rem
+  @media (max-width: 1000px)
+    font-size: 5rem
+  @media (max-width: 1000px)and (orientation: portrait)
+    font-size: 4rem
+    line-height: 1.2
+  @media (max-width: 1000px)and (orientation: landscape)
+    font-size: 5em
+    line-height: 1.4
+
 
 //H2 36px - auto - medium
 .h2
   font-size: 3.6rem
   line-height: normal
   font-weight: $fs_med
-  @media (max-width: 767px)
-    font-size: 3rem
-  @media (max-width: 1199px)
-    font-size: 3.2rem
+
   
 //H3 18 - 130% - light
 .h3

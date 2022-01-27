@@ -24,14 +24,16 @@
     max-width: 4rem
     max-height: 4rem
 
-.marker-s1
-  min-width: 5.8rem
-  max-width: 5.8rem
-  min-height: 5.8rem
-  max-width: 5.8rem
-  border-radius: 1.5rem
+.marker-v1
+  $size: 4rem
+  min-width: $size
+  max-width: $size
+  min-height: $size
+  max-width: $size
+  border-radius: 50%
   color: $accent
-  img
-    max-width: 3em
-    min-width: 3em
+  svg, img
+    max-width: $size*0.66
+    min-width: $size*0.66
 
+.marker-v2

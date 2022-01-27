@@ -1,5 +1,42 @@
 //все стили секции Хэдера
 @use "../base/variables" as *
 
+.header
+  position: relative
+  display: flex
+  justify-content: space-between
+  padding: 1rem
+  align-items: center
+
+.header__logoWr
+  max-width: 25rem
+  @media (max-width: 1000px)and (orientation: portrait)
+    max-width: 20rem
+
+.header__btn
+
+.header__phone_checkbox+label
+  position: relative
+  cursor: pointer
+  *
+    cursor: pointer
+.header__phone_checkbox+label:before
+  display: block
+  content: '+7(920)628-52-22'
+  font-size: 2em
+  position: absolute
+  right: 100%
+  font-weight: $fs_bold
+  padding: 1em
+  letter-spacing: .1em
+  opacity: 0
+  transform: scaleX(0)
+  transform-origin: right
+  overflow: hidden
+  cursor: pointer
+.header__phone_checkbox:checked+label:before
+  opacity: 1
+  transform: scaleX(1)
+
 
 

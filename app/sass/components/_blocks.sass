@@ -19,3 +19,15 @@
 .ai-center
   align-items: center
 
+.fixed_proportions_img_wrapper
+  position: relative
+  &:before
+    display: block
+    content: ''
+    padding-top: 75%
+  img
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
