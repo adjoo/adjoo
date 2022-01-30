@@ -2,4 +2,17 @@
 @use "../base/variables" as *
 
 .footer
-
+  display: flex
+.footer_btn
+  display: none
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    display: block
+    margin: auto auto auto 1rem
+.header__phone_checkbox.in_footer
+  &+label:before
+    right: unset
+    left: 100%
+    transform: scaleX(0)
+    transform-origin: left
+  &:checked+label:before
+    transform: scaleX(1)

@@ -5,16 +5,19 @@ html
   font-family: $font
   color: $text
   background-color: $bg
-  min-width: 375px
+  width: 100%
+  min-width: 320px
   overflow-x: hidden
-  @media (max-width: 1000px)
-    font-size: calc(4.2px + 0.563vw)
-  @media (max-width: 1000px) and (orientation: portrait)
-    font-size: calc(4.85px + 0.515vw)
+  min-height: 100%
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    font-size: calc(7.23px + 0.179vw)
+  //для вертикальной ориентации экрана
+  @media (max-width: 991px) and (min-aspect-ratio: 1 / 1)
+    font-size: calc(5.6px + 0.447vw)
+
 body
   overflow-x: hidden
-  max-width: 100%
-  min-width: 375px
+  min-width: 320px
   ::selection
     background: $accent
     color: $white

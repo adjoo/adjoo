@@ -27,7 +27,6 @@
 .marker-v1
   $size: 4rem
   min-width: $size
-  max-width: $size
   min-height: $size
   max-width: $size
   border-radius: 50%
@@ -35,5 +34,13 @@
   svg, img
     max-width: $size*0.66
     min-width: $size*0.66
+  @media (max-width: 991px) and (min-aspect-ratio: 1 / 1)
+    $size: 3rem
+    min-width: $size
+    min-height: $size
+    max-width: $size
+    svg, img
+      max-width: $size*0.66
+      min-width: $size*0.66
 
 .marker-v2

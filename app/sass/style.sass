@@ -14,12 +14,8 @@ $asideWidth: 7rem
 .container
   max-width: 192rem
   padding: 1rem
-  @media (max-width: 1000px)
-    padding: 2rem
-  @media (max-width: 1000px) and (orientation: landscape)
-    padding: 2rem 4rem
 .container_fixed
-  height: 100vh
+  height: 100%
   position: fixed
   top: 0
   left: 0
@@ -28,11 +24,18 @@ $asideWidth: 7rem
   display: grid
   grid-template-columns: $asideWidth 1fr $asideWidth
   grid-template-rows: $headerHeight calc(100% - #{$headerHeight} - #{$footerHeight} ) $footerHeight
-  grid-template-areas: "head head head""main main asideright""foot foot asideright"
-
+  grid-template-areas: "head head head""main main asideright""main main asideright"
   background: url(../img/bg_fixed.png) center center no-repeat, $bg
   background-size: auto 100%
   background-blend-mode: luminosity
+  @media (max-width: 991px) and (min-aspect-ratio: 1 / 1)
+    $headerHeight: 7rem
+    grid-template-rows: $headerHeight calc(100% - #{$headerHeight} - #{$footerHeight} ) $footerHeight
+
+  //для вертикальной ориентации экрана
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    grid-template-areas: "head head head""main main main""foot foot asideright"
+
 .container_fixed__header
   position: relative
   z-index: 2
@@ -44,6 +47,8 @@ $asideWidth: 7rem
   display: grid
   place-items: center
   margin-top: -$headerHeight
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    margin-top: unset
 .container_fixed__footer
   position: relative
   z-index: 1
@@ -53,75 +58,79 @@ $asideWidth: 7rem
   z-index: 0
   grid-area: main
   touch-action: none
-
 .fullPageScroll__container
-  margin-top: -$headerHeight
-  margin-bottom: -$footerHeight
+
+
+$sectionYGap: 1rem
+$sectionXGap: 3rem
 .fullPageScroll__section
-  $sectionGap: 3rem
   position: relative
-  padding-top: $headerHeight + $sectionGap
-  padding-bottom: $footerHeight + $sectionGap
-  padding-left: $sectionGap
-  padding-right: $sectionGap
-  min-height: 100%
+  height: 100%
   max-height: 100%
+  width: auto
+  display: flex
+  padding-top: $sectionYGap
+  padding-bottom: $sectionYGap
+  padding-left: $sectionXGap
+  padding-right: $sectionXGap
   overflow: hidden
-  min-width: 100%
-  max-width: 100%
+  display: grid
+  place-items: center
+  @media (max-width: 991px)
+    $sectionXGap: 2rem
+    padding-left: $sectionXGap
+    padding-right: $sectionXGap
+
+
 .fullPageScroll__scrollNav
   display: flex
   flex-direction: column
   align-items: flex-end
   justify-content: center
 
-
 .section
-  display: grid
-  place-items: center
+
 .text_shadow
   text-shadow: 0rem 0.2rem .5rem $accent, 0rem 0.5rem 1rem $bg
 
 .section__row
-  max-width: 90rem
   width: 100%
   margin: auto
+  max-height: 100%
+  overflow: hidden
+  max-width: 90rem
+
 .section_1__row
   &>*
     margin: 1rem 0
-    @media (max-width: 1000px)and (orientation: portrait)
-      margin: 1.5rem 0
-
 .section_2__items
 .section_2__item
   display: flex
   align-items: center
   margin: 1em auto
-  @media (max-width: 1000px)and (orientation: portrait)
-    margin: 2rem auto
-
 .section_3__row
-  width: 100%
+
 .section_3__items
-  width: 100%
   display: flex
-  flex-wrap: wrap
-  margin: -1rem
   justify-content: center
+  flex-wrap: wrap
+  max-height: 100%
+  li
+    padding: 2rem
+    flex: 1 1 40%
+    max-width: 43rem
+    @media (max-width: 991px) and (max-aspect-ratio: 1 /1 )
+      flex: 1 1 100%
 
 .section_3__item
   position: relative
-  margin: 1rem
-  flex: 0 0 45rem
-  max-width: 46%
-  min-width: 28rem
+  max-height: 100%
   box-shadow: 0 0.2rem 0.5rem 0.5rem #47812099, 0 -0.2rem 0.5rem 0.5rem $accent
   &:hover
     box-shadow: 0 0.2rem 0.5rem 0.5rem $accent, 0 -0.2rem 0.5rem 0.5rem $accent
-  @media (max-width: 1000px)and (orientation: portrait)
-    max-width: 100%
-
-
-
+  @media (max-width: 991px) and (min-aspect-ratio: 1 /1 )
+    max-height: 16rem
+  @media (max-width: 991px) and (max-aspect-ratio: 1 /1 )
+    max-height: 20rem
 
 

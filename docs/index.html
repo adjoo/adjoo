@@ -11,7 +11,7 @@
     <!--/for dedug-->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="icon" href="img/favicon/favicon.ico">
 
@@ -31,84 +31,111 @@
 
 <div class="container container_fixed">
     <header class="container_fixed__header header">
-        <div class="col">
-            <div class="header__logoWr">
-                <img src="img/logo_millenium_250.png" alt="Millenium">
+        <div class="header__logoWr">
+            <img src="img/logo_millenium_250.png" alt="Millenium">
+        </div>
+        <div class="header__phoneWr">
+            <div class="header__phone">
+                <span></span>
+            </div>
+            <div class="header__btn">
+                <input type="checkbox" hidden id="headerPhoneCheckbox" class="header__phone_checkbox">
+                <label for="headerPhoneCheckbox" class="button button-svg transition">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.02093 2.50049L3.61228 2.50049C3.38868 2.49959 3.16735 2.54548 2.96247 2.63524C2.75759 2.72499 2.57368 2.85664 2.42252 3.02173C2.27136 3.18683 2.15627 3.38174 2.08463 3.59398C2.013 3.80622 1.98639 4.03111 2.00652 4.25425C2.27497 6.72976 3.1192 9.10765 4.47137 11.1969C5.70406 13.1406 7.34876 14.7886 9.28866 16.0237C11.3832 17.3833 13.7679 18.2294 16.2496 18.4935C16.4717 18.5136 16.6954 18.4871 16.9067 18.4158C17.118 18.3445 17.3121 18.2299 17.4767 18.0794C17.6414 17.9288 17.7729 17.7455 17.863 17.5411C17.9531 17.3368 17.9997 17.1159 17.9999 16.8926L17.9999 14.4791C18.0038 14.0887 17.8658 13.7102 17.6117 13.4142C17.3576 13.1182 17.0048 12.9248 16.619 12.8702C15.8481 12.7683 15.0913 12.5794 14.3629 12.3071C14.0755 12.1988 13.7632 12.1754 13.4629 12.2396C13.1627 12.3037 12.8871 12.4528 12.6688 12.6691L11.6491 13.6908C9.63908 12.5455 7.97478 10.8779 6.83184 8.8639L7.8515 7.84221C8.06736 7.62349 8.21613 7.34734 8.28016 7.04649C8.3442 6.74564 8.32082 6.43271 8.21279 6.14477C7.94098 5.41489 7.75244 4.65654 7.65078 3.88419C7.59576 3.49341 7.39931 3.13651 7.0988 2.88139C6.79829 2.62626 6.41468 2.4907 6.02093 2.50049Z"
+                              fill="currentcolor"/>
+                    </svg>
+                </label>
             </div>
         </div>
-        <div class="col">
-            <div class="header__phoneWr">
-                <div class="header__phone">
-                    <span></span>
-                </div>
-                <div class="header__btn">
-                    <input type="checkbox" hidden id="headerPhoneCheckbox" class="header__phone_checkbox">
-                    <label for="headerPhoneCheckbox" class="button button-svg transition">
-                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.02093 2.50049L3.61228 2.50049C3.38868 2.49959 3.16735 2.54548 2.96247 2.63524C2.75759 2.72499 2.57368 2.85664 2.42252 3.02173C2.27136 3.18683 2.15627 3.38174 2.08463 3.59398C2.013 3.80622 1.98639 4.03111 2.00652 4.25425C2.27497 6.72976 3.1192 9.10765 4.47137 11.1969C5.70406 13.1406 7.34876 14.7886 9.28866 16.0237C11.3832 17.3833 13.7679 18.2294 16.2496 18.4935C16.4717 18.5136 16.6954 18.4871 16.9067 18.4158C17.118 18.3445 17.3121 18.2299 17.4767 18.0794C17.6414 17.9288 17.7729 17.7455 17.863 17.5411C17.9531 17.3368 17.9997 17.1159 17.9999 16.8926L17.9999 14.4791C18.0038 14.0887 17.8658 13.7102 17.6117 13.4142C17.3576 13.1182 17.0048 12.9248 16.619 12.8702C15.8481 12.7683 15.0913 12.5794 14.3629 12.3071C14.0755 12.1988 13.7632 12.1754 13.4629 12.2396C13.1627 12.3037 12.8871 12.4528 12.6688 12.6691L11.6491 13.6908C9.63908 12.5455 7.97478 10.8779 6.83184 8.8639L7.8515 7.84221C8.06736 7.62349 8.21613 7.34734 8.28016 7.04649C8.3442 6.74564 8.32082 6.43271 8.21279 6.14477C7.94098 5.41489 7.75244 4.65654 7.65078 3.88419C7.59576 3.49341 7.39931 3.13651 7.0988 2.88139C6.79829 2.62626 6.41468 2.4907 6.02093 2.50049Z"
-                                  fill="currentcolor"/>
-                        </svg>
-                    </label>
-                </div>
-            </div>
 
 
-        </div>
     </header>
     <main class="container_fixed__main fullPageScroll__container">
         <section class="fullPageScroll__section transition_fullPageScroll section">
+
             <div class="section__row section_1__row text_shadow">
-                <h2 class="h3">html, css, js, sass, gulp, git, figma, PS, Wordpress, ModX, React, PHP...</h2>
+                <h2 class="h3 opacity">html, css, js, sass, gulp, git, figma, PS, Wordpress, ModX, React, PHP...</h2>
                 <h1 class="h1 uppercase">Разработка и<br> поддержка сайтов</h1>
                 <p class="h5">простых и комплексных</p>
-                <p class="description">less code, more performance and style </p>
+
             </div>
+
         </section>
         <section class="fullPageScroll__section transition_fullPageScroll section">
+
             <div class="section__row section_2__row text_shadow">
                 <ul class="section_2__items">
                     <li class="section_2__item">
-                        <div class="marker marker-v1"><svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z" fill="currentcolor"/></svg></div>
-                        <div class="section_2__main"><span class="h3">Соблюдаю оговоренные сроки выполнения</span></div>
+                        <div class="marker marker-v1">
+                            <svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
+                                      fill="currentcolor"/>
+                            </svg>
+                        </div>
+                        <div class="section_2__main"><span class="h3">Соблюдаю оговоренные сроки выполнения</span>
+                        </div>
                     </li>
                     <li class="section_2__item">
-                        <div class="marker marker-v1"><svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z" fill="currentcolor"/></svg></div>
-                        <div class="section_2__main"><span class="h3">Быстрая загрузка на любых устройствах</span></div>
+                        <div class="marker marker-v1">
+                            <svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
+                                      fill="currentcolor"/>
+                            </svg>
+                        </div>
+                        <div class="section_2__main"><span class="h3">Быстрая загрузка на любых устройствах</span>
+                        </div>
                     </li>
                     <li class="section_2__item">
-                        <div class="marker marker-v1"><svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z" fill="currentcolor"/></svg></div>
+                        <div class="marker marker-v1">
+                            <svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
+                                      fill="currentcolor"/>
+                            </svg>
+                        </div>
                         <div class="section_2__main"><span class="h3">Мобильная версия "в комплекте"</span></div>
                     </li>
                     <li class="section_2__item">
-                        <div class="marker marker-v1"><svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z" fill="currentcolor"/></svg></div>
+                        <div class="marker marker-v1">
+                            <svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.79692 12.4285C6.00599 13.2777 4.66067 13.2777 3.86975 12.4285L1.10076 9.45525C0.480571 8.78932 0.480571 7.75728 1.10076 7.09135C1.78726 6.35422 2.95521 6.35505 3.64067 7.09314L3.86916 7.33918C4.65992 8.19067 6.0074 8.19128 6.79894 7.34051L12.3586 1.36472C13.0447 0.627337 14.2123 0.627045 14.8987 1.36408C15.5192 2.03033 15.5192 3.06287 14.8987 3.72912L6.79692 12.4285Z"
+                                      fill="currentcolor"/>
+                            </svg>
+                        </div>
                         <div class="section_2__main"><span class="h3">Опыт WEB-разработки более 4-х лет</span></div>
                     </li>
+
                 </ul>
             </div>
+
         </section>
         <section class="fullPageScroll__section transition_fullPageScroll section">
+
             <div class="section__row section_3__row">
                 <ul class="section_3__items">
-                    <li class="section_3__item r_corners fixed_proportions_img_wrapper transition_slow">
-                        <a href="https://adjoo.github.io/visatourservice/"
-                           class="link_on_element"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        ></a>
-                        <img src="img/case_1.png" alt="VisaTourService">
-                        
+                    <li>
+                        <div class="section_3__item r_corners  transition_slow">
+                            <a href="https://adjoo.github.io/visatourservice/"
+                               class="link_on_element"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            ></a>
+                            <img src="img/case_1.png" alt="VisaTourService">
+                        </div>
                     </li>
-                    <li class="section_3__item r_corners fixed_proportions_img_wrapper transition_slow">
-                        <a href="https://adjoo.github.io/splav/"
-                           class="link_on_element"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        ></a>
-                        <img src="img/case_2.png" alt="VisaTourService">
-
+                    <li>
+                        <div class="section_3__item r_corners  transition_slow">
+                            <a href="https://adjoo.github.io/splav/"
+                               class="link_on_element"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            ></a>
+                            <img src="img/case_2.png" alt="VisaTourService">
+                        </div>
                     </li>
                 </ul>
             </div>
+
         </section>
     </main>
     <aside class="container_fixed__aside-right">
@@ -119,7 +146,17 @@
         </div>
     </aside>
     </aside>
-    <footer class="container_fixed__footer footer"></footer>
+    <footer class="container_fixed__footer footer">
+        <div class="footer_btn">
+            <input type="checkbox" hidden id="footerPhoneCheckbox" class="header__phone_checkbox in_footer">
+            <label for="footerPhoneCheckbox" class="button button-svg transition">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.02093 2.50049L3.61228 2.50049C3.38868 2.49959 3.16735 2.54548 2.96247 2.63524C2.75759 2.72499 2.57368 2.85664 2.42252 3.02173C2.27136 3.18683 2.15627 3.38174 2.08463 3.59398C2.013 3.80622 1.98639 4.03111 2.00652 4.25425C2.27497 6.72976 3.1192 9.10765 4.47137 11.1969C5.70406 13.1406 7.34876 14.7886 9.28866 16.0237C11.3832 17.3833 13.7679 18.2294 16.2496 18.4935C16.4717 18.5136 16.6954 18.4871 16.9067 18.4158C17.118 18.3445 17.3121 18.2299 17.4767 18.0794C17.6414 17.9288 17.7729 17.7455 17.863 17.5411C17.9531 17.3368 17.9997 17.1159 17.9999 16.8926L17.9999 14.4791C18.0038 14.0887 17.8658 13.7102 17.6117 13.4142C17.3576 13.1182 17.0048 12.9248 16.619 12.8702C15.8481 12.7683 15.0913 12.5794 14.3629 12.3071C14.0755 12.1988 13.7632 12.1754 13.4629 12.2396C13.1627 12.3037 12.8871 12.4528 12.6688 12.6691L11.6491 13.6908C9.63908 12.5455 7.97478 10.8779 6.83184 8.8639L7.8515 7.84221C8.06736 7.62349 8.21613 7.34734 8.28016 7.04649C8.3442 6.74564 8.32082 6.43271 8.21279 6.14477C7.94098 5.41489 7.75244 4.65654 7.65078 3.88419C7.59576 3.49341 7.39931 3.13651 7.0988 2.88139C6.79829 2.62626 6.41468 2.4907 6.02093 2.50049Z"
+                          fill="currentcolor"/>
+                </svg>
+            </label>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -28,16 +28,11 @@ p
 //H1 63px - 100% - bold
 .h1
   font-size: 6.3rem
-  line-height: 1
+  line-height: 1.1
   font-weight: $fs_bold
-  @media (max-width: 1000px)
-    font-size: 5rem
-  @media (max-width: 1000px)and (orientation: portrait)
+  @media (max-width: 991px)
     font-size: 4rem
     line-height: 1.2
-  @media (max-width: 1000px)and (orientation: landscape)
-    font-size: 5em
-    line-height: 1.4
 
 
 //H2 36px - auto - medium
@@ -91,3 +86,6 @@ p
   font-weight: $fs_semi
 .regular
   font-weight: $fs_regular
+
+.opacity
+  opacity: .3

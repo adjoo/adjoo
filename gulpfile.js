@@ -148,7 +148,6 @@ function scripts() {
 			directory + "/" + 'libs/chosen/chosen.jquery.min.js',
 			directory + "/" + 'libs/chosen/chosen.proto.min.js',
 			directory + "/" + 'libs/mag-popup/jquery.magnific-popup.min.js',
-			directory + "/" + 'libs/jquery-swipe/jquery.touch.js',
 			directory + "/" + 'libs/jquery-swipe/jquery.swipe.js',
 			directory + "/" + 'libs/customScrollbarPlugin/jquery.mCustomScrollbar.concat.min.js',
 			directory + "/" + 'js/lazyimg.js',

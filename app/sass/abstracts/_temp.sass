@@ -1,11 +1,14 @@
 
 //body
-  .row > *
+  .container
+    outline: 2px solid gray
+    outline-offset: 1px
+  .container > *
      outline: 1px solid lightcoral
      outline-offset: -1px
-  .row > * > *
+  .container > * > *
     outline: 1px solid darkred
-  .row > * > * > *, .row > * > * > * > *
+  .container > * > * > *, section > * > * > * > *
     outline: 1px solid lightblue
   a
     outline: none

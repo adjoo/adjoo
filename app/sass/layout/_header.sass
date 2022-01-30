@@ -9,15 +9,25 @@
   align-items: center
 
 .header__logoWr
+  display: flex
   max-width: 25rem
-  @media (max-width: 1000px)and (orientation: portrait)
+  img
+    object-fit: contain
+  @media (max-width: 991px)
     max-width: 20rem
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    margin: auto
+
 
 .header__btn
+  @media (max-width: 991px) and (max-aspect-ratio: 1 / 1)
+    display: none
+
 
 .header__phone_checkbox+label
   position: relative
   cursor: pointer
+  user-select: none
   *
     cursor: pointer
 .header__phone_checkbox+label:before
@@ -34,6 +44,7 @@
   transform-origin: right
   overflow: hidden
   cursor: pointer
+
 .header__phone_checkbox:checked+label:before
   opacity: 1
   transform: scaleX(1)
