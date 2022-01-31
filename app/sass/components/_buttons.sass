@@ -11,7 +11,7 @@ button, .button
   text-align: center
   white-space: nowrap
 
-.button-svg //с элементом внутри, акцентный фон, белый текст
+.button-svg, .button-svg:focus, .button-svg:active //с элементом внутри, акцентный фон, белый текст
   $fontSize: 1rem
   $minH: 5em // 50px
   $radius: 1.5em //15px
@@ -23,7 +23,7 @@ button, .button
   border-radius: $radius
   background-color: $col_2
   color: $col_1
-  &:hover, &:active, &:focus
+  &:hover, &:active
     border-radius: $radius
     background-color: $col_1
     color: $col_2

@@ -150,7 +150,7 @@ function scripts() {
 			directory + "/" + 'libs/mag-popup/jquery.magnific-popup.min.js',
 			directory + "/" + 'libs/jquery-swipe/jquery.swipe.js',
 			directory + "/" + 'libs/customScrollbarPlugin/jquery.mCustomScrollbar.concat.min.js',
-			directory + "/" + 'js/lazyimg.js',
+			directory + "/" + 'libs/adjoo-fullpagescroll/adjoo-fps.js',
 			directory + "/" + 'js/common.js', // Always at the end
 			//directory + "/" + 'js/page_*.js',
 		], {allowEmpty: true})
